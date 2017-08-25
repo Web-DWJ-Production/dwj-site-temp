@@ -1,0 +1,99 @@
+.scroll-instructions {
+    padding: 5px 20px;
+    background: rgba(255,255,255,0.5);
+
+    display: inline-block;
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+}
+.scroll-instructions span { padding: 0px 5px;}
+
+@media screen and (max-width: 736px) {
+    .scroll-instructions { display: none; }
+}
+/**/
+.dwj-color0 {
+    background-color: rgba(0,0,0,0.7);
+    /*background-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.8) 50%) !important;*/
+    color: rgba(255,255,255,1) !important;
+}
+
+.dwj-color1 {
+    background-color: rgba(255,255, 255, 0.7);
+    /*background-image: linear-gradient(90deg, transparent 0%, rgba(255,255, 255, 0.7) 30%, rgba(255,255, 255, 0.8) 50%) !important;*/
+    color: rgba(0,0,0,1) !important;
+}
+.d-icon-c1 li:before, .d-icon-c1 li:after {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+.d-icon-c1 .icon:before {
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.25) !important;
+}
+
+.dwj-color2 {
+    background-color: rgba(175, 175, 175, 0.7);
+    /*background-image: linear-gradient(90deg, transparent 0%, rgba(175, 175, 175, 0.7) 30%, rgba(175, 175, 175, 0.8) 50%) !important;*/
+    color: rgba(255,255,255,1) !important;
+}
+.banner-color {
+    background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(0,0,0,1) 20%, rgba(175,175,175,1) 60%, rgba(255,255,255,1));
+}
+.banner-cover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* Tablet */
+.tab-area {
+    padding-bottom: 0 !important;
+    justify-content: flex-end !important;
+    background-image: none !important;
+}
+.half-tablet {
+    border: solid 40px #fff;
+    border-bottom: 0;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+    vertical-align: middle;    
+}
+.half-tablet:after {
+    background: #eee;
+    border-radius: 100%;
+    content: '';
+    height: 10px;
+    left: 50%;
+    margin: -23px 0 0 -5px;
+    position: absolute;
+    top: 0;
+    width: 10px;
+}
+
+.half-tablet:before {
+    background-color: rgba(100,100,100,0.2);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; 
+}
+
+.half-tablet .content-area{
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+@media screen and (max-width: 736px) {
+    .half-tablet .content-area img { width: 100%; }
+    .actions{ display: none; }
+}
